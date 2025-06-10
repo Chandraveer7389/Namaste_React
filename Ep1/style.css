@@ -1,3 +1,36 @@
-h1{
-    color: blue;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid yellow;
+}
+.logo{
+    width: 100px;
+}
+.nav-items > ul{
+    display: flex;
+    margin-right: 20px;
+}
+.nav-items > ul > li{
+    font-size: 24px;
+    padding: 20px;
+    list-style: none;
+}
+.card{
+    padding: 10px;
+    width: 200px;
+    height: 350px;  
+}
+.card:hover{
+    cursor: pointer;
+    border: 0.1px solid burlywood;
+}
+.search{
+    padding: 20px;
+}
+.food{
+    width: 100%;
+}
+.res-container{
+    display: flex;
+    gap: 10px;
 }
