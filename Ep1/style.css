@@ -24,13 +24,18 @@
     cursor: pointer;
     border: 0.1px solid burlywood;
 }
-.search{
-    padding: 20px;
-}
 .food{
     width: 100%;
 }
 .res-container{
     display: flex;
     gap: 10px;
+}
+.filter{
+    margin: 10px;
+    display: flex;
+}
+.filter-btn{
+    margin-left: 10px;
+    display: inline;
 }
