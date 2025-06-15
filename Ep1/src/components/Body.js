@@ -1,12 +1,18 @@
 import Card from "./Card";
 import {useState} from "react"
 import { rest } from "../utils/constant";
+import useOnlineStatus from "../utils/useOnline";
 
 
 const Body = () =>{
   let filterOb =[];
   const [List,setaList] = useState(rest);
   const [searchItems,setSearchItems] = useState("");
+  const status = useOnlineStatus();
+  if(status === false) return <h1>You are offline</h1>
+
+
+
     return (
       <div className="body">
         <div className="filter">
